@@ -7,24 +7,39 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <fragment
-        android:tag="첫번째 Fragment"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        class="com.nepplus.fragment_20211204.fragments.FirstFragment"
-        />
+        android:layout_height="match_parent">
 
-    <fragment
-        android:tag="두번째 Fragment"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        class="com.nepplus.fragment_20211204.fragments.SecondFragment"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <fragment
-        android:tag="firstFragment"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        class="com.nepplus.fragment_20211204.fragments.FirstFragment"/>
+            <fragment
+                android:tag="첫번째 Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                class="com.nepplus.fragment_20211204.fragments.FirstFragment"
+                />
+
+            <fragment
+                android:tag="두번째 Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                class="com.nepplus.fragment_20211204.fragments.SecondFragment"/>
+
+            <fragment
+                android:tag="firstFragment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                class="com.nepplus.fragment_20211204.fragments.FirstFragment"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 
 
